@@ -1,0 +1,13 @@
+com\jdTouch\pages\ResultPage.class
+com\jdTouch\util\Utilities.class
+com\jdTouch\pages\DetailsPage.class
+com\jdTouch\pages\FreeListing.class
+com\jdTouch\pages\TestingClass.class
+com\jdTouch\ExtentReport\ExtentReportListener.class
+com\jdTouch\pages\HomePage.class
+com\jdTouch\pages\MoviesLandingPage.class
+com\jdTouch\pages\ShopfrontLandingPage.class
+com\jdTouch\pages\SearchPage.class
+com\jdTouch\base\BaseClass.class
+com\jdTouch\pages\ContextualMenu.class
+com\jdTouch\pages\FilterPage.class

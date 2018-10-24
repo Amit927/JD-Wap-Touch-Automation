@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Wap Touch Test]]">
+  <listeners>
+    <listener class-name="com.jdTouch.ExtentReport.ExtentReportListener"/>
+  </listeners>
+  <test name="wapTouchTest(failed)(failed)">
+    <classes>
+      <class name="com.jdTouch.testcases.ContextualMenuTest">
+        <methods>
+          <include name="setup"/>
+          <include name="TestFeedbackPageLoggedinflow"/>
+          <include name="TestMyInterestPageLoggedinflow"/>
+          <include name="close"/>
+          <include name="TestLoginFunctionality"/>
+          <include name="TestLoginPageSubmitButton"/>
+        </methods>
+      </class> <!-- com.jdTouch.testcases.ContextualMenuTest -->
+      <class name="com.jdTouch.testcases.FreeListingTest">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.jdTouch.testcases.FreeListingTest -->
+    </classes>
+  </test> <!-- wapTouchTest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Wap Touch Test]] -->

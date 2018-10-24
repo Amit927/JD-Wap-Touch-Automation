@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [softwaretestingmaterial]">
+  <test name="testngTest(failed)">
+    <classes>
+      <class name="com.jdTouch.testcases.HomePageTest">
+        <methods>
+          <include name="testSearchBar"/>
+          <include name="setup"/>
+          <include name="closebrowsers"/>
+        </methods>
+      </class> <!-- com.jdTouch.testcases.HomePageTest -->
+      <class name="com.jdTouch.testcases.SearchPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.jdTouch.testcases.SearchPageTest -->
+    </classes>
+  </test> <!-- testngTest(failed) -->
+</suite> <!-- Failed suite [softwaretestingmaterial] -->
