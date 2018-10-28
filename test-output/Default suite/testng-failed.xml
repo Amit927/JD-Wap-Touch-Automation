@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.jdTouch.testcases.TestingClassTest">
+      <class name="com.jdTouch.testcases.SearchPageTest">
         <methods>
-          <include name="closebrowser"/>
+          <include name="testSearchCompanyAutosuggest"/>
           <include name="setup"/>
-          <include name="TestFeedbackPageLoggedinflow"/>
+          <include name="testSearchCategoryAutosuggest"/>
+          <include name="testSearchProductAutosuggest"/>
+          <include name="teardown"/>
+          <include name="testSearchGroupAutosuggest"/>
         </methods>
-      </class> <!-- com.jdTouch.testcases.TestingClassTest -->
+      </class> <!-- com.jdTouch.testcases.SearchPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -75,14 +75,15 @@ public class HomePage extends BaseClass {
 		while(status=true) {
 		for(int i=1;i<=12;i++) {
 			//(//span[@class='hpicon hpshoppingicon'])[2]
-		String xpath = "(//span[@class='hpicon hpshoppingicon'])["+i+"]";
-		driver.findElement(By.xpath(xpath)).click();
+		String xpath = "(//span[@class='hptext'])["+i+"]";
+		WebElement hotkeys = driver.findElement(By.xpath(xpath)); 
+		System.out.println(i+". "+hotkeys.getText());
+		hotkeys.click();
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.out.println(i);
 		driver.navigate().back();
 		try {
 			Thread.sleep(1000);
