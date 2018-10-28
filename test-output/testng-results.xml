@@ -1,61 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="84422" started-at="2018-10-28T10:43:22Z" finished-at="2018-10-28T10:44:46Z">
+  <suite name="Default suite" duration-ms="79660" started-at="2018-10-28T11:53:33Z" finished-at="2018-10-28T11:54:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="84422" started-at="2018-10-28T10:43:22Z" finished-at="2018-10-28T10:44:46Z">
-      <class name="com.jdTouch.testcases.HomePageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.jdTouch.testcases.HomePageTest@39aeed2f]" name="setup" is-config="true" duration-ms="6022" started-at="2018-10-28T16:13:22Z" finished-at="2018-10-28T16:13:28Z">
+    <test name="Default test" duration-ms="79660" started-at="2018-10-28T11:53:33Z" finished-at="2018-10-28T11:54:53Z">
+      <class name="com.jdTouch.testcases.SearchPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="setup" is-config="true" duration-ms="8796" started-at="2018-10-28T17:23:33Z" finished-at="2018-10-28T17:23:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testSearchBar()[pri:0, instance:com.jdTouch.testcases.HomePageTest@39aeed2f]" name="testSearchBar" duration-ms="97" started-at="2018-10-28T16:13:28Z" finished-at="2018-10-28T16:13:28Z">
+        <test-method status="PASS" signature="testSearchBarRedirection()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="testSearchBarRedirection" duration-ms="111" started-at="2018-10-28T17:23:42Z" finished-at="2018-10-28T17:23:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearchBar -->
-        <test-method status="PASS" signature="closebrowsers()[pri:0, instance:com.jdTouch.testcases.HomePageTest@39aeed2f]" name="closebrowsers" is-config="true" duration-ms="1049" started-at="2018-10-28T16:13:28Z" finished-at="2018-10-28T16:13:29Z">
+        </test-method> <!-- testSearchBarRedirection -->
+        <test-method status="PASS" signature="testSearchPage()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="testSearchPage" duration-ms="2051" started-at="2018-10-28T17:23:42Z" finished-at="2018-10-28T17:23:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closebrowsers -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.jdTouch.testcases.HomePageTest@39aeed2f]" name="setup" is-config="true" duration-ms="6031" started-at="2018-10-28T16:13:29Z" finished-at="2018-10-28T16:13:35Z">
+        </test-method> <!-- testSearchPage -->
+        <test-method status="PASS" signature="testSearchCategoryAutosuggest()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="testSearchCategoryAutosuggest" duration-ms="20686" started-at="2018-10-28T17:23:44Z" finished-at="2018-10-28T17:24:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testLocationfield()[pri:0, instance:com.jdTouch.testcases.HomePageTest@39aeed2f]" name="testLocationfield" duration-ms="58" started-at="2018-10-28T16:13:35Z" finished-at="2018-10-28T16:13:35Z">
+        </test-method> <!-- testSearchCategoryAutosuggest -->
+        <test-method status="PASS" signature="testSearchCompanyAutosuggest()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="testSearchCompanyAutosuggest" duration-ms="18705" started-at="2018-10-28T17:24:05Z" finished-at="2018-10-28T17:24:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLocationfield -->
-        <test-method status="PASS" signature="closebrowsers()[pri:0, instance:com.jdTouch.testcases.HomePageTest@39aeed2f]" name="closebrowsers" is-config="true" duration-ms="654" started-at="2018-10-28T16:13:35Z" finished-at="2018-10-28T16:13:36Z">
+        </test-method> <!-- testSearchCompanyAutosuggest -->
+        <test-method status="PASS" signature="testSearchGroupAutosuggest()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="testSearchGroupAutosuggest" duration-ms="11781" started-at="2018-10-28T17:24:23Z" finished-at="2018-10-28T17:24:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closebrowsers -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.jdTouch.testcases.HomePageTest@39aeed2f]" name="setup" is-config="true" duration-ms="6800" started-at="2018-10-28T16:13:36Z" finished-at="2018-10-28T16:13:43Z">
+        </test-method> <!-- testSearchGroupAutosuggest -->
+        <test-method status="PASS" signature="testSearchProductAutosuggest()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="testSearchProductAutosuggest" duration-ms="16884" started-at="2018-10-28T17:24:35Z" finished-at="2018-10-28T17:24:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testsocialFeedsCount()[pri:0, instance:com.jdTouch.testcases.HomePageTest@39aeed2f]" name="testsocialFeedsCount" duration-ms="23834" started-at="2018-10-28T16:13:43Z" finished-at="2018-10-28T16:14:07Z">
+        </test-method> <!-- testSearchProductAutosuggest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="teardown" is-config="true" duration-ms="632" started-at="2018-10-28T17:24:52Z" finished-at="2018-10-28T17:24:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testsocialFeedsCount -->
-        <test-method status="PASS" signature="closebrowsers()[pri:0, instance:com.jdTouch.testcases.HomePageTest@39aeed2f]" name="closebrowsers" is-config="true" duration-ms="1470" started-at="2018-10-28T16:14:07Z" finished-at="2018-10-28T16:14:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closebrowsers -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.jdTouch.testcases.HomePageTest@39aeed2f]" name="setup" is-config="true" duration-ms="7531" started-at="2018-10-28T16:14:08Z" finished-at="2018-10-28T16:14:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testHotkeysRedirections()[pri:0, instance:com.jdTouch.testcases.HomePageTest@39aeed2f]" name="testHotkeysRedirections" duration-ms="29993" started-at="2018-10-28T16:14:16Z" finished-at="2018-10-28T16:14:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testHotkeysRedirections -->
-        <test-method status="PASS" signature="closebrowsers()[pri:0, instance:com.jdTouch.testcases.HomePageTest@39aeed2f]" name="closebrowsers" is-config="true" duration-ms="871" started-at="2018-10-28T16:14:46Z" finished-at="2018-10-28T16:14:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closebrowsers -->
-      </class> <!-- com.jdTouch.testcases.HomePageTest -->
+        </test-method> <!-- teardown -->
+      </class> <!-- com.jdTouch.testcases.SearchPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

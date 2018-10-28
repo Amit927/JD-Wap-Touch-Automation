@@ -62,7 +62,7 @@ public class SearchPage extends BaseClass{
 		searchdata = utils.readDataFromXcel(datafilepath, sheetname , i, 0);
 		whatfield.sendKeys(searchdata);
 		Thread.sleep(1500);
-		List<WebElement> ASlist = driver.findElements(By.xpath("//span[@class='adrswp']"));
+		List<WebElement> ASlist = driver.findElements(By.xpath("//ul[@class='rntsrchs']//li//span[@class='adrswp']"));
 		for(WebElement atsgt : ASlist) {
 			if(atsgt.getText().contains(searchdata)) {
 				status = true;

@@ -4,8 +4,12 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.IllegalFormatException;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -13,8 +17,11 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.internal.Utils;
 
 import com.jdTouch.base.BaseClass;
 
@@ -131,7 +138,37 @@ public void enterOTP() {
 		}
 }
 
+// get System Time==============
 
+public String getCurrentTime() {
+	DateFormat format = new SimpleDateFormat("ddMMyyyy_HHmm_ss");
+	Date date = new Date();
+	String time = format.format(date);
+	return time;
+}
 
+//Take Screenshots ========================
+
+public void takeScreenshot() {
+	file = new File(screenshotPath+getCurrentTime()+".jpg");
+	TakesScreenshot scsht = ((TakesScreenshot)driver);
+	File scrsource = scsht.getScreenshotAs(OutputType.FILE);
+	Utils.copyFile(scrsource, file);
 
 }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
