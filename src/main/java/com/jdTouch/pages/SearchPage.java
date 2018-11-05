@@ -19,10 +19,17 @@ public class SearchPage extends BaseClass{
 	@FindBy(xpath="//input[@type='text']")
 	WebElement whatfield;
 	
-	@FindBy(xpath= "//div[@id='middle_btn']//spam[@class='hdradrs']")
+	@FindBy(xpath= "//div[contains(@id,'middle')]//span[@class='hdradrs']")
 	WebElement wherefield;
 	
+	@FindBy(xpath = "//span[contains(@class,'hdrbkarrow')]")
+	WebElement searchpageBack;
 	
+	@FindBy(xpath = "//span[contains(@class,'hdrnoftn tr')]")
+	WebElement searchNotificationIcon;
+	
+	@FindBy(xpath = "//input[@id='searchtxt' and @placeholder='Search']")
+	WebElement searchbar;
 
 	
 	//Constructor
@@ -41,14 +48,26 @@ public class SearchPage extends BaseClass{
 	// ACTIONS
 	
 	
-	public boolean validateSearchPage() {
-		return  (whatfield.isDisplayed());
+	public boolean validateWhatfield() {
+		return  whatfield.isDisplayed();
 	}
 
 	
 	public boolean validateWherefield() {
 		return  wherefield.isDisplayed();
 	}
+	
+	public boolean checkSearchpageBack() {
+		searchpageBack.click();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return searchbar.isDisplayed();
+	}
+	
 	
 	public boolean checkAutosuggest(String sheetname) {
 		boolean status = false;
