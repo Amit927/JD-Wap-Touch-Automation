@@ -72,7 +72,6 @@ public class SearchPageTest extends BaseClass{
 	
 	
 	
-	
 @AfterClass
 public void teardown() {
 	closetabs();
