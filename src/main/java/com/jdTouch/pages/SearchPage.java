@@ -19,10 +19,17 @@ public class SearchPage extends BaseClass{
 	@FindBy(xpath="//input[@type='text']")
 	WebElement whatfield;
 	
-	@FindBy(xpath= "//div[@id='middle_btn']//spam[@class='hdradrs']")
+	@FindBy(xpath= "//div[contains(@id,'middle')]//span[@class='hdradrs']")
 	WebElement wherefield;
 	
+	@FindBy(xpath = "//span[contains(@class,'hdrbkarrow')]")
+	WebElement searchpageBack;
 	
+	@FindBy(xpath = "//span[contains(@class,'hdrnoftn tr')]")
+	WebElement searchNotificationIcon;
+	
+	@FindBy(xpath = "//input[@id='searchtxt' and @placeholder='Search']")
+	WebElement searchbar;
 
 	
 	//Constructor
@@ -41,8 +48,8 @@ public class SearchPage extends BaseClass{
 	// ACTIONS
 	
 	
-	public boolean validateSearchPage() {
-		return  (whatfield.isDisplayed());
+	public boolean validateWhatfield() {
+		return  whatfield.isDisplayed();
 	}
 
 	
@@ -50,9 +57,20 @@ public class SearchPage extends BaseClass{
 		return  wherefield.isDisplayed();
 	}
 	
-	public boolean checkAutosuggest(String sheetname) throws InterruptedException {
+	public boolean checkSearchpageBack() {
+		searchpageBack.click();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return searchbar.isDisplayed();
+	}
+	
+	
+	public boolean checkAutosuggest(String sheetname) {
 		boolean status = false;
-		//driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		utils = new Utilities();
 		int totalrows = utils.findRowsCount(datafilepath , sheetname);
 		String searchdata="";
@@ -61,7 +79,12 @@ public class SearchPage extends BaseClass{
 		whatfield.click();
 		searchdata = utils.readDataFromXcel(datafilepath, sheetname , i, 0);
 		whatfield.sendKeys(searchdata);
-		Thread.sleep(1500);
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		try {
 		List<WebElement> ASlist = driver.findElements(By.xpath("//ul[@class='rntsrchs']//li//span[@class='adrswp']"));
 		for(WebElement atsgt : ASlist) {
 			if(atsgt.getText().contains(searchdata)) {
@@ -72,6 +95,9 @@ public class SearchPage extends BaseClass{
 				status = false;
 				break;
 			}
+		}
+		} catch(Exception e) {
+			e.printStackTrace();
 		}
 		System.out.println(searchdata+" - "+status);
 		whatfield.clear();
