@@ -37,8 +37,8 @@ static Sheet sheet = null;
 public int findRowsCount(String xcelfilePath,String sheetName) {
 	
 	try {
-		file = new File(xcelfilePath);
-		fis = new FileInputStream(file);
+	//	file = new File(xcelfilePath);
+		fis = new FileInputStream(xcelfilePath);
 		wb = new HSSFWorkbook(fis);
 	}catch(FileNotFoundException e) {
 		e.printStackTrace();
@@ -56,8 +56,8 @@ public String readDataFromXcel(String dataFilePath, String sheetName, int rowsCo
 	String readdata;
 	
 try {
-	 file = new File(dataFilePath);
-	fis = new FileInputStream(file);
+	// file = new File(dataFilePath);
+	fis = new FileInputStream(dataFilePath);
 	 wb = new HSSFWorkbook(fis);
 	 sheet =  wb.getSheet(sheetName);
 	}
