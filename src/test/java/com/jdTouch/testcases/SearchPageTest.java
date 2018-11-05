@@ -43,28 +43,28 @@ public class SearchPageTest extends BaseClass{
 	}
 	
 	@Test (priority=4)
-	public void testSearchCategoryAutosuggest() throws InterruptedException {
+	public void testSearchCategoryAutosuggest()  {
 		boolean status2 = searchpage.checkAutosuggest("categorydata");
 		Assert.assertTrue(status2);
 		System.out.println("Pass");
 	}
 	
 	@Test (priority=5)
-	public void testSearchCompanyAutosuggest() throws InterruptedException {
+	public void testSearchCompanyAutosuggest()  {
 		boolean status2 = searchpage.checkAutosuggest("companydata");
 		Assert.assertTrue(status2);
 		System.out.println("Pass");
 	}
 	
 	@Test (priority=6)
-	public void testSearchGroupAutosuggest() throws InterruptedException {
+	public void testSearchGroupAutosuggest() {
 		boolean status2 = searchpage.checkAutosuggest("groupdata");
 		Assert.assertTrue(status2);
 		System.out.println("Pass");
 	}
 	
 	@Test (priority=7)
-	public void testSearchProductAutosuggest() throws InterruptedException {
+	public void testSearchProductAutosuggest() {
 		boolean status2 = searchpage.checkAutosuggest("productdata");
 		Assert.assertTrue(status2);
 		System.out.println("Pass");

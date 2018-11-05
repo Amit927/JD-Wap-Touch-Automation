@@ -1,18 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Wap Touch Test]">
+  <listeners>
+    <listener class-name="com.jdTouch.ExtentReport.ExtentReportListener"/>
+  </listeners>
+  <test name="wapTouchTest(failed)">
     <classes>
       <class name="com.jdTouch.testcases.SearchPageTest">
         <methods>
-          <include name="testSearchCompanyAutosuggest"/>
           <include name="setup"/>
-          <include name="testSearchCategoryAutosuggest"/>
-          <include name="testSearchProductAutosuggest"/>
           <include name="teardown"/>
-          <include name="testSearchGroupAutosuggest"/>
         </methods>
       </class> <!-- com.jdTouch.testcases.SearchPageTest -->
+      <class name="com.jdTouch.testcases.ContextualMenuTest">
+        <methods>
+          <include name="setup"/>
+          <include name="TestFeedbackPageLoggedinflow"/>
+          <include name="TestMyInterestPageLoggedinflow"/>
+          <include name="close"/>
+          <include name="TestOthersNotification"/>
+        </methods>
+      </class> <!-- com.jdTouch.testcases.ContextualMenuTest -->
+      <class name="com.jdTouch.testcases.FreeListingTest">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.jdTouch.testcases.FreeListingTest -->
+      <class name="com.jdTouch.testcases.HomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closebrowsers"/>
+        </methods>
+      </class> <!-- com.jdTouch.testcases.HomePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- wapTouchTest(failed) -->
+</suite> <!-- Failed suite [Wap Touch Test] -->

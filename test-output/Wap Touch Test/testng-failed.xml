@@ -6,13 +6,6 @@
   </listeners>
   <test name="wapTouchTest(failed)">
     <classes>
-      <class name="com.jdTouch.testcases.FreeListingTest">
-        <methods>
-          <include name="closebrowser"/>
-          <include name="testFreelistingCross"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.jdTouch.testcases.FreeListingTest -->
       <class name="com.jdTouch.testcases.SearchPageTest">
         <methods>
           <include name="setup"/>
@@ -24,12 +17,16 @@
           <include name="setup"/>
           <include name="TestFeedbackPageLoggedinflow"/>
           <include name="TestMyInterestPageLoggedinflow"/>
-          <include name="TestOtherInfringementPolicy"/>
           <include name="close"/>
-          <include name="TestLoginFunctionality"/>
-          <include name="TestLoginPageSubmitButton"/>
+          <include name="TestOthersNotification"/>
         </methods>
       </class> <!-- com.jdTouch.testcases.ContextualMenuTest -->
+      <class name="com.jdTouch.testcases.FreeListingTest">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.jdTouch.testcases.FreeListingTest -->
       <class name="com.jdTouch.testcases.HomePageTest">
         <methods>
           <include name="setup"/>

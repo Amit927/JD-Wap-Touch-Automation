@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="79660" started-at="2018-10-28T11:53:33Z" finished-at="2018-10-28T11:54:53Z">
+  <suite name="Default suite" duration-ms="80126" started-at="2018-11-05T11:38:16Z" finished-at="2018-11-05T11:39:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="79660" started-at="2018-10-28T11:53:33Z" finished-at="2018-10-28T11:54:53Z">
+    <test name="Default test" duration-ms="80126" started-at="2018-11-05T11:38:16Z" finished-at="2018-11-05T11:39:36Z">
       <class name="com.jdTouch.testcases.SearchPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="setup" is-config="true" duration-ms="8796" started-at="2018-10-28T17:23:33Z" finished-at="2018-10-28T17:23:42Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="setup" is-config="true" duration-ms="9742" started-at="2018-11-05T17:08:16Z" finished-at="2018-11-05T17:08:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testSearchBarRedirection()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="testSearchBarRedirection" duration-ms="111" started-at="2018-10-28T17:23:42Z" finished-at="2018-10-28T17:23:42Z">
+        <test-method status="PASS" signature="testSearchBarRedirection()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="testSearchBarRedirection" duration-ms="96" started-at="2018-11-05T17:08:25Z" finished-at="2018-11-05T17:08:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchBarRedirection -->
-        <test-method status="PASS" signature="testSearchPage()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="testSearchPage" duration-ms="2051" started-at="2018-10-28T17:23:42Z" finished-at="2018-10-28T17:23:44Z">
+        <test-method status="PASS" signature="testSearchPage()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="testSearchPage" duration-ms="2062" started-at="2018-11-05T17:08:25Z" finished-at="2018-11-05T17:08:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchPage -->
-        <test-method status="PASS" signature="testSearchCategoryAutosuggest()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="testSearchCategoryAutosuggest" duration-ms="20686" started-at="2018-10-28T17:23:44Z" finished-at="2018-10-28T17:24:05Z">
+        <test-method status="PASS" signature="testSearchCategoryAutosuggest()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="testSearchCategoryAutosuggest" duration-ms="20505" started-at="2018-11-05T17:08:28Z" finished-at="2018-11-05T17:08:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchCategoryAutosuggest -->
-        <test-method status="PASS" signature="testSearchCompanyAutosuggest()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="testSearchCompanyAutosuggest" duration-ms="18705" started-at="2018-10-28T17:24:05Z" finished-at="2018-10-28T17:24:23Z">
+        <test-method status="PASS" signature="testSearchCompanyAutosuggest()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="testSearchCompanyAutosuggest" duration-ms="18580" started-at="2018-11-05T17:08:48Z" finished-at="2018-11-05T17:09:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchCompanyAutosuggest -->
-        <test-method status="PASS" signature="testSearchGroupAutosuggest()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="testSearchGroupAutosuggest" duration-ms="11781" started-at="2018-10-28T17:24:23Z" finished-at="2018-10-28T17:24:35Z">
+        <test-method status="PASS" signature="testSearchGroupAutosuggest()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="testSearchGroupAutosuggest" duration-ms="11685" started-at="2018-11-05T17:09:07Z" finished-at="2018-11-05T17:09:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchGroupAutosuggest -->
-        <test-method status="PASS" signature="testSearchProductAutosuggest()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="testSearchProductAutosuggest" duration-ms="16884" started-at="2018-10-28T17:24:35Z" finished-at="2018-10-28T17:24:52Z">
+        <test-method status="PASS" signature="testSearchProductAutosuggest()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="testSearchProductAutosuggest" duration-ms="16781" started-at="2018-11-05T17:09:18Z" finished-at="2018-11-05T17:09:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchProductAutosuggest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="teardown" is-config="true" duration-ms="632" started-at="2018-10-28T17:24:52Z" finished-at="2018-10-28T17:24:53Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.jdTouch.testcases.SearchPageTest@39aeed2f]" name="teardown" is-config="true" duration-ms="672" started-at="2018-11-05T17:09:35Z" finished-at="2018-11-05T17:09:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

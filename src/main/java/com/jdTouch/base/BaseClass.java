@@ -21,7 +21,7 @@ public class BaseClass {
 	
 	public static String geckodriverpath=" /Users/amitkumarv/Documents/Automation/geckodriver.exe";
 	public static String chromedriverpath= "/Users/amitkumarv/Documents/Automation/chromedriver.exe";
-	public static String datafilepath = "C:\\Users\\amitkumarv\\Documents\\DOCUMENTS\\AMIT 1\\Automation 1\\TESTDATA\\testdata.xls";
+	public static String datafilepath = "C:\\Users\\amitkumarv\\Documents\\DOCUMENTS\\AMIT 1\\Automation 1\\JD_WapTouch\\src\\main\\java\\com\\jdTouch\\data\\testdata.xls";
 	public static String propertiesfilePath = "C:\\Users\\amitkumarv\\Documents\\DOCUMENTS\\AMIT 1\\Automation 1\\JD_WapTouch\\src\\main\\java\\com\\jdTouch\\config\\config.properties";
 	public static String freeListdata = "C:\\Users\\amitkumarv\\Documents\\DOCUMENTS\\AMIT 1\\Automation 1\\JD_WapTouch\\src\\main\\java\\com\\jdTouch\\data\\freelistdata.xls";
 	public static String screenshotPath = "C:\\Users\\amitkumarv\\Documents\\DOCUMENTS\\AMIT 1\\Automation 1\\JD_WapTouch\\test-output\\TestScreenshots";

@@ -50,9 +50,8 @@ public class SearchPage extends BaseClass{
 		return  wherefield.isDisplayed();
 	}
 	
-	public boolean checkAutosuggest(String sheetname) throws InterruptedException {
+	public boolean checkAutosuggest(String sheetname) {
 		boolean status = false;
-		//driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		utils = new Utilities();
 		int totalrows = utils.findRowsCount(datafilepath , sheetname);
 		String searchdata="";
@@ -61,7 +60,12 @@ public class SearchPage extends BaseClass{
 		whatfield.click();
 		searchdata = utils.readDataFromXcel(datafilepath, sheetname , i, 0);
 		whatfield.sendKeys(searchdata);
-		Thread.sleep(1500);
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		try {
 		List<WebElement> ASlist = driver.findElements(By.xpath("//ul[@class='rntsrchs']//li//span[@class='adrswp']"));
 		for(WebElement atsgt : ASlist) {
 			if(atsgt.getText().contains(searchdata)) {
@@ -72,6 +76,9 @@ public class SearchPage extends BaseClass{
 				status = false;
 				break;
 			}
+		}
+		} catch(Exception e) {
+			e.printStackTrace();
 		}
 		System.out.println(searchdata+" - "+status);
 		whatfield.clear();
