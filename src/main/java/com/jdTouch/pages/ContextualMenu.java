@@ -95,6 +95,9 @@ public class ContextualMenu extends BaseClass{
 	@FindBy(xpath = "//span[contains(@class,'hdrbkarrow')]")
 	WebElement feedback_back;
 	
+	@FindBy(xpath = "//button[@class='grn-btn arwbtn']")
+	WebElement feedback_upgradebutton; 
+	
 	@FindBy(xpath = "//a[@class='tbhdr act' and @id='ratings']")
 	WebElement feedback_ratings;
 	
@@ -509,7 +512,7 @@ public boolean checkFeedbackLoggedin() {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-	status = feedback_ratings.isDisplayed();
+	status = feedback_upgradebutton.isDisplayed();
 	feedback_back.click();
 	return status;
 }

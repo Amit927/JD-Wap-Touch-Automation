@@ -8,7 +8,9 @@
     <classes>
       <class name="com.jdTouch.testcases.SearchPageTest">
         <methods>
+          <include name="testSearchBarRedirection"/>
           <include name="setup"/>
+          <include name="navigateToHomePage"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- com.jdTouch.testcases.SearchPageTest -->
@@ -18,7 +20,6 @@
           <include name="TestFeedbackPageLoggedinflow"/>
           <include name="TestMyInterestPageLoggedinflow"/>
           <include name="close"/>
-          <include name="TestOthersNotification"/>
         </methods>
       </class> <!-- com.jdTouch.testcases.ContextualMenuTest -->
       <class name="com.jdTouch.testcases.FreeListingTest">
