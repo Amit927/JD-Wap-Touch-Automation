@@ -21,18 +21,14 @@ public class SearchPageTest extends BaseClass{
 		super();
 	}
 	
-@BeforeClass
+@BeforeMethod
 	public void  setup() throws InterruptedException {
 		initialization();
 		homepage = new HomePage();
-	}
-	
-@BeforeMethod
-public void testSearchBarRedirection() {
 		 searchpage = homepage.checkSearchBarRedirection();
-	
 	}
 	
+
 	@Test (priority=1)
 	public void testWhatField() {
 		status = searchpage.validateWhatfield();
@@ -69,13 +65,14 @@ public void testSearchBarRedirection() {
 		Assert.assertTrue(status);
 	}
 	
-@AfterMethod
+@Test (priority=8)
 public void navigateToHomePage() {
-	searchpage.checkSearchpageBack();
+	status = searchpage.checkSearchpageBack();
+	Assert.assertTrue(status);
 }
 	
 	
-@AfterClass
+@AfterMethod
 public void teardown() {
 	closetabs();
 	}	

@@ -483,7 +483,7 @@ public boolean checkMyInterestLoggedin() {
 	interestback.click();
 	return status;
 }
-	
+
 public boolean checkMyTransactionLoggedin() {
 	myTransaction.click();
 	loginName.sendKeys(prop.getProperty("username"));
